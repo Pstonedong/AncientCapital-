@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <style>
+        .layout{
+            width: 100%;
+        }
+        .note{
+            height: 850px;
+        }
+        .note-up{
+            background: #f8f8f8;
+            width: 1140px;
+            height: 425px;
+            margin: 0 auto;
+        }
+        .note-down{
+            background: #f8f8f8;
+            width: 1140px;
+            height: 425px;
+            margin: 0 auto;
+        }
+        .note-up-l{
+            width: 540px;
+            height: 255px;
+            margin: 80px  0 0 15px ;
+        }
+        .note-up-l span{
+            display: block;
+        }
+        .note-up-t1{
+            font-size: 24px;
+            line-height: 24px;
+            margin-top: 26px;
+        }
+        .note-up-r{
+            width: 440px;
+            height: 255px;
+            margin: -257px 115px 0 44px ;
+        }
+        .note-up-r img{
+           width: 100%;
+        }
+
+        .note-down-l{
+            width: 540px;
+            height: 255px;
+            margin: 80px  0 0 15px ;
+        }
+        .note-down-l span{
+            display: block;
+        }
+        .note-down-t1{
+            font-size: 24px;
+            line-height: 24px;
+            margin-top: 26px;
+        }
+        .note-down-r{
+            width: 440px;
+            height: 255px;
+            margin: 80px 0 0 15px ;
+        }
+        .note-down-r img{
+              width: 100%;
+          }
+        .note-up-icon{
+            height: 40px;
+            width:40px;
+            text-align: center;
+            line-height:40px;
+            font-size:18px;
+            color: #fff;
+            background-color: #40d2b1;
+            border-radius: 50%;
+            margin-right:20px;
+            margin-bottom:10px;
+        }
+        .note-up-t3{
+            font-size: 14px;
+            line-height:40px;
+            color: #5d5d5d;
+        }
+
+        .guild{
+            background: #f8f8f8;
+            height: 830px;
+        }
+        .guild-b{
+            width: 1139px;
+            height: 830px;
+            margin: 0 auto;
+        }
+        .guild-text{
+            font-size: 28px;
+            color: #333333;
+            text-align: center;
+            padding-top: 108px;
+        }
+        .guild-up{
+            width: 1140px;
+            height: 224px;
+            margin-top: 50px;
+        }
+        .guild-i{
+            width: 271px;
+            height: 166px;
+        }
+        .guild-i img{
+            width: 100%;
+        }
+        .guild-up-t{
+            width: 274px;
+            height: 224px;
+
+            margin-left: 15px;
+        }.guild-up-t1{
+            width: 273px;
+            height: 224px;
+            margin-left: 0px;
+        }
+        .guild-p{
+            border: 1px solid #40d2b1 ;
+            margin: 20px 0 0 60px;
+            width: 136px;
+            height: 36px;
+            text-align: center;
+            line-height: 36px;
+        }
+        .box{
+            padding-top: 75px;
+            width: 1140px;
+            height: 224px;
+        }
+        .guild-p a{
+            text-decoration: none;
+            color: #0f0f0f;
+            font-weight: 500;
+        }
+
+        .download{
+            background: #ffffff;
+            height: 460px;
+        }
+        .download-main{
+            width: 1140px;
+            height: 300px;
+            margin: 81px auto;
+        }
+        .download-l{
+            width: 582px;
+            height: 300px;
+        }
+        .download-r{
+            width: 554px;
+            height: 300px;
+        }.download-r img{
+            width: 100%;
+        }
+        .download-l h1{
+            margin-top: 22px;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .download-m {
+            margin-top: 44px;
+            display: block;
+            width: 545px;
+            height: 34px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .download-f1{
+            display: block;
+            margin-top: 22px;
+            margin-left: 5px;
+        }.download-fd1{
+            display: block;
+            margin-top: 22px;
+
+        }
+
+        .map{
+            height: 500px;
+            background: url("img/contact-bg.png") no-repeat;
+        }
+        .map-z{
+            background: rgba(40,40,40,.75);
+            height: 100%;
+        }
+        .map-box{
+            width: 1140px;
+            height: 302px;
+            padding-top: 90px;
+            margin-left: 114px;
+            margin-bottom: 110px;
+        }
+        .map-msg{
+            width: 600px;
+            height: 302px;
+        }
+        .map-msg h1{
+            color: #fefefe;
+            font-size: 30px;
+            margin-left: 56px;
+        }
+        .map-tab{
+            width: 525px;
+            height: 302px;
+        }
+        .msg-up{
+            width: 556px;
+            height: 90px;
+        }
+        .msg-up span{
+            color:#fefefe;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+        }
+        .msg-dw{
+            margin-top: 20px;
+            width: 251px;
+            height: 147px;
+        }
+        .msg-dw h3{
+            color:#fefefe;
+            font-size: 14px;
+            line-height: 14px;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        #footer{
+            height: 70px;
+            background: url("img/foot_04.jpg") no-repeat center;
+        }
+
+        .form-row{
+            margin-bottom:20px;
+        }
+        .form-input{
+            box-sizing: border-box;
+            border-width: 0px;
+            background: #fff;
+            height: 50px;
+            width: 100%;
+            padding: 10px 12px;
+            font-size:14px;
+        }
+        textarea.form-input{
+            height: 92px;
+        }
+        .form-input-half{
+            width: 250px;
+        }
+        .form-bt{
+            background: #40d1b0;
+            box-sizing: border-box;
+            border-width: 0px;
+            padding: 0;
+            width: 340px;
+            height: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .logo{
+                height: auto;
+            }
+            .logo-l{
+                width: 100%;
+                padding: 50px 0 80px;
+            }
+            .logo-ad{
+                height: auto;
+                box-sizing: border-box;
+                width: 100%;
+                padding: 0 25px;
+                margin-bottom:20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+
+        <div id="nav">
+            <div class="title fl">
+                麦子学院
+            </div>
+            <div class="nav-content fr">
+                <ul>
+                    <li><a href="">首页</a></li>
+                    <li><a href="">论坛</a></li>
+                    <li><a href="">前端开发</a></li>
+                    <li><a href="">最新课程</a></li>
+                    <li><a href="">移动APP</a></li>
+                    <li><a href="">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="main-banner  row" >
+            <div class="cover">
+                <div class="wow bounceInUp animated">
+                    <div class="banner-summary">
+                        <h1 class="summary">bootstrap实战课程等你来战</h1>
+                        <span class="banner-summary-1">本套课程适用于：1.WEB开发人员；2.网站维护人员、管理人员</span>
+                        <span class="banner-summary-2">培训技能的目标：使用bootstrap框架快速构建响应式网页，颠覆传统WEB前端！</span>
+                    </div>
+                    <div class="banner-img">
+                        <img src="img/php.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="logo wow bounceInUp animated">
+                <div class="logo-l clear ">
+                    <div class="logo-ad fl">
+                        <div class="logo-img"><img src="img/a.png" alt=""></div>
+                        <span class="logo-ad-1">Android开发</span>
+                        <span class="logo-ad-2">Android开发技术交流、问题求助、实战案例分享</span>
+                    </div>
+                    <div class="logo-ad fl">
+                        <div class="logo-img">
+                            <img src="img/i.png" alt="">
+                        </div>
+                        <span class="logo-ad-1">Android开发</span>
+                        <span class="logo-ad-2">Android开发技术交流、问题求助、实战案例分享</span>
+                    </div>
+                    <div class="logo-ad fl">
+                        <div class="logo-img">
+                            <img src="img/b.png" alt="">
+                        </div>
+                        <span class="logo-ad-1">Android开发</span>
+                        <span class="logo-ad-2">Android开发技术交流、问题求助、实战案例分享</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="note">
+            <div class="note-up ">
+                <div class="note-up-l fl wow fadeInLeft animated">
+                    <span class="note-up-t1">  HTML5前端开发</span>
+                    <span class="note-up-t3">一线资深前端开发工程师倾情打造！助你完成普通程序员到优秀工程师的华丽升级！ </span>
+
+                    <div class="clear">
+                        <span class="note-up-icon fl">&</span><span class="note-up-t3">使用HTML5与CSS3技术轻松实现设备自适应展示。</span>
+                    </div>
+                    <div class="clear">
+                        <span class="note-up-icon fl">&</span><span class="note-up-t3">使用HTML5与CSS3技术轻松实现设备自适应展示。</span>
+                    </div>
+                </div>
+                <div class="note-up-r fr wow fadeInRight animated">
+                    <img src="img/html5.jpg" alt="">
+                </div>
+            </div>
+            <div class="note-down ">
+                <div class="note-down-r fl wow fadeInLeft animated">
+                    <img src="img/Bootstrap.jpg" alt="">
+                </div>
+                <div class="note-down-l fr wow fadeInRight animated">
+                    <span class="note-down-t1">HTML5前端开发</span>
+                    <span class="note-up-t3">一线资深前端开发工程师倾情打造！助你完成普通程序员到优秀工程师的华丽升级！ </span>
+                    <div class="clear">
+                        <span class="note-up-icon fl">&</span><span class="note-up-t3">使用HTML5与CSS3技术轻松实现设备自适应展示。</span>
+                    </div>
+                    <div class="clear">
+                        <span class="note-up-icon fl">&</span><span class="note-up-t3">使用HTML5与CSS3技术轻松实现设备自适应展示。</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="guild wow fadeIn animated" data-wow-delay="1s" data-wow-duration="2s">
+            <div class="guild-b">
+                <div class="guild-text">最新课程</div>
+                <div class="box">
+                    <div class="guild-up">
+                        <div class="guild-up-t1 fl">
+                            <div class="guild-i">
+                                <img src="img/swift.jpg" alt="">
+                            </div>
+                            <div class="guild-p"><a href="">加入学习</a></div>
+                        </div>
+                        <div class="guild-up-t fl">
+                            <div class="guild-i">
+                                <img src="img/swift.jpg" alt="">
+                            </div>
+                            <div class="guild-p"><a href="">加入学习</a></div>
+                        </div><div class="guild-up-t fl">
+                        <div class="guild-i">
+                            <img src="img/swift.jpg" alt="">
+                        </div>
+                        <div class="guild-p"><a href="">加入学习</a></div>
+                    </div><div class="guild-up-t fl">
+                        <div class="guild-i">
+                            <img src="img/swift.jpg" alt="">
+                        </div>
+                        <div class="guild-p"><a href="">加入学习</a></div>
+                    </div>
+                    </div>
+                    <div class="guild-up">
+                        <div class="guild-up-t1 fl">
+                            <div class="guild-i">
+                                <img src="img/swift.jpg" alt="">
+                            </div>
+                            <div class="guild-p"><a href="">加入学习</a></div>
+                        </div>
+                        <div class="guild-up-t fl">
+                            <div class="guild-i">
+                                <img src="img/swift.jpg" alt="">
+                            </div>
+                            <div class="guild-p"><a href="">加入学习</a></div>
+                        </div><div class="guild-up-t fl">
+                        <div class="guild-i">
+                            <img src="img/swift.jpg" alt="">
+                        </div>
+                        <div class="guild-p"><a href="">加入学习</a></div>
+                    </div><div class="guild-up-t fl">
+                        <div class="guild-i">
+                            <img src="img/swift.jpg" alt="">
+                        </div>
+                        <div class="guild-p"><a href="">加入学习</a></div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="download wow fadeInUp animated">
+            <div class="download-main clear">
+                <div class="download-l fl">
+                    <h1>麦子学院移动APP下载</h1>
+                    <span class="download-m fl">全新ui交互，与新网站数据同步，更加丰富的课程，开启精彩无限，语音搜索课程，
+                    喊出你想要的课程，一件收藏，方便自己复习学习，离线下载课程，在哪儿都能开！</span>
+                    <span class="download-fd1 fl">
+                    <img src="img/ipone.jpg" alt="">
+                </span>
+                    <span class="download-f1 fl">
+                    <img src="img/ipone.jpg" alt="">
+                </span>
+
+                </div>
+                <div class="download-r fl">
+                    <img src="img/app-banner.jpg" alt="">
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="map">
+            <div class="map-z">
+                <div class="map-box clear">
+                    <div class="map-msg fl wow slideInLeft animated">
+                        <h1>联系小麦</h1>
+                        <div class="msg-up">
+                        <span>
+                            麦子学院是成都麦子信息技术有限公司旗下一个
+                            IT在线教育平台，目前已有30万注册用户，10万以上
+                            APP下载量，5000小时视频内容。我们从不说空话，专注于IT
+                            在线教育，脱离传统教育的束缚，让你走哪学哪，想学就学
+                            。逗比的老师，贴心的助教，在这你能感受到来自五湖四海
+                            伙伴们热情和踏实的学习态度！
+                        </span>
+                        </div>
+                        <div class="msg-dw">
+                            <h3>地址：成都高新区天府软件园D-11</h3>
+                            <h3>联系电话：028-86567913</h3>
+                            <h3>邮箱：hr@maiziedu.com</h3>
+                        </div>
+                    </div>
+                    <div class="map-tab fl wow slideInRight animated">
+                        <form action="">
+                            <div class="form-row clear">
+                                <input type="text" placeholder="您的姓名" class="form-input form-input-half fl">
+                                <input type="text" placeholder="您的邮箱" class="form-input form-input-half fr">
+                            </div>
+                            <div class="form-row">
+                                <input type="text" placeholder="标题" class="form-input">
+                            </div>
+                            <div class="form-row">
+                                <textarea name="" class="form-input" placeholder="留言内容" cols="30" rows="10"></textarea>
+                            </div>
+                            <button type="submit" class="form-bt">提交</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+</body>
+<script src="js/wow.js"></script>
+<script>
+    new WOW().init();
+</script>
+</html>

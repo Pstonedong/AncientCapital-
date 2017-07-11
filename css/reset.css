@@ -1,0 +1,124 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, font, img,
+ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+center, u, b, i {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline
+}
+.clear{zoom:1;}
+.clear:after{content: '';display: block; clear: both;}
+.fl{float: left;}
+.fr{float: right;}
+
+/*上半部*/
+#nav{ height: 70px;
+    width: 1006px;
+    margin: 0 auto;
+}
+.title{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 70px;
+    color: #40d2b1;}
+.nav-content li{list-style: none;
+    display: inline;
+    line-height: 70px;
+    font-size: 16px;
+    margin-left: 30px;
+}
+.nav-content li a{
+    text-decoration: none;
+    color: #0f0f0f;
+    font-weight: 500;
+}
+
+#main-banner{
+    height: 800px;
+    background: url("../img/home-bg.jpg") no-repeat 0 0 / auto 100%;
+    /*background:linear-gradient(#153630,#32433d) ;*/
+}
+.cover{
+    background: rgba(26,55,49,.85);
+    height: 100%;
+}
+.summary{
+    color: #FFFFFF;
+    font-size: 36px;
+    margin: 30px 200px;
+}
+.banner-summary{
+    width: 900px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.banner-summary span{
+    display: block;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.banner-summary-1{
+    margin: 0 250px;
+}.banner-summary-2{
+     margin: 20px 195px;
+ }
+.banner-img{
+    width: 900px;
+    height: 450px;
+    margin: 25px auto;
+}
+
+.logo{
+    height: 370px;
+}
+.logo-l{
+    width: 1140px;
+    margin: 0 auto;
+    padding: 98px 0 108px;
+}
+.logo-img{
+    width: 98px;
+    height: 98px;
+    margin: 0 auto;
+    line-height: 172px;
+
+}
+.logo-img img{
+    background: #ffffff;
+    width: 100%;
+}
+.logo-ad{
+    width: 330px;
+    padding: 0 25px;
+    height: 172px;
+    text-align: center;
+}
+.logo-ad span{
+    display: block;
+}
+.logo-ad-1{
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 600;
+    margin-top:24px;
+}
+.logo-ad-2{
+    font-size: 14px;
+    line-height: 14px;
+    margin-top:14px;
+}
+
+
+
